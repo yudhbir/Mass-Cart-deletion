@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Cybage Marketplace Plugin
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Open Software License (OSL 3.0)
+ * It is available on the World Wide Web at:
+ * http://opensource.org/licenses/osl-3.0.php
+ * If you are unable to access it on the World Wide Web, please send an email
+ * To: Support_Magento@cybage.com.  We will send you a copy of the source file.
+ *
+ * @category   Marketplace Plugin
+ * @package    Cybage_Marketplace
+ * @copyright  Copyright (c) 2014 Cybage Software Pvt. Ltd., India
+ *             http://www.cybage.com/pages/centers-of-excellence/ecommerce/ecommerce.aspx
+ * @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ * @author     Cybage Software Pvt. Ltd. <Support_Magento@cybage.com>
+ */
+-->
+<config>
+    <tabs>
+        <ctab_config translate="label" module="customtab">
+            <label>YRS CustomTab</label>
+            <sort_order>100</sort_order>
+        </ctab_config>
+    </tabs>
+    <sections>
+        <ctab_options translate="label" module="customtab">
+            <label>CustomTab Setting</label>
+            <tab>ctab_config</tab>
+            <sort_order>1000</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+ 
+            <groups>
+                <ctab_group translate="label" module="customtab">
+                    <label>Redirection Setting</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>1000</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+ 
+                    <fields>											
+                        <customtab_enable translate="label">
+							<label>Redirection Enable:</label>
+							<comment></comment>
+							<frontend_type>select</frontend_type>
+							<sort_order>10</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<can_be_empty>1</can_be_empty>
+                            <source_model>adminhtml/system_config_source_enabledisable</source_model>
+						</customtab_enable>											
+                        
+                    </fields>
+                </ctab_group>
+            </groups>
+        </ctab_options>
+    </sections>
+</config>

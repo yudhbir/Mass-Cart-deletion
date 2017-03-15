@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <YRS_CartitemDeletion>
+            <version>0.0.1</version>
+        </YRS_CartitemDeletion>
+    </modules>
+    <global>
+        <models>
+            <CartitemDeletion>
+                <class>CartitemDeletion_Model</class>
+            </CartitemDeletion>
+        </models>
+		<helpers>
+            <cartitemdeletion>
+                <class>CartitemDeletion_Helper</class>
+            </cartitemdeletion>
+        </helpers>
+		<blocks>
+			<checkout>
+				<rewrite>
+					<cart>YRS_CartitemDeletion_Block_Cart</cart>
+				</rewrite>
+			</checkout>
+		</blocks>
+    </global>
+	<frontend>
+		<layout>
+			<updates>
+				<cartitemdeletion>
+					<file>cartitem_deletion.xml</file>
+				</cartitemdeletion>
+			</updates>
+		</layout>
+		<routers>
+		 <checkout>
+			 <args>
+				 <modules>
+					 <yrs_cartitemdeletion before="Mage_Checkout">YRS_CartitemDeletion</yrs_cartitemdeletion>
+				 </modules>
+			 </args>
+		 </checkout>
+		</routers>
+	</frontend>
+</config> 

@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package>
+    <name>YRS_CartitemDeletion</name>
+    <version>0.0.1</version>
+    <stability>stable</stability>
+    <license>Open Software License</license>
+    <channel>local</channel>
+    <extends/>
+    <summary>Checkout Cart deletion item by mass action</summary>
+    <description>Checkout Cart deletion item by mass action</description>
+    <notes>YRS_CartitemDeletion 0.0.1 version</notes>
+    <authors><author><name>Yudhbir Singh</name><user>Yudhbir</user><email>sachinsingh3066@gmail.com</email></author></authors>
+    <date>2017-03-09</date>
+    <time>04:19:45</time>
+    <contents><target name="magelocal"><dir name="YRS"><dir name="CartitemDeletion"><dir name="Block"><file name="Cart.php" hash="5493d9180215b7c24e5d9d40aae45254"/></dir><dir name="Helper"><file name="Data.php" hash="801b5fdef1a4d943fe2f3d1859ac777c"/></dir><dir name="Model"><file name="Observer.php" hash="d76d67c9dbede5984977465b6239c45a"/></dir><dir name="controllers"><file name="CartController.php" hash="da6be79f831884f8625c802263b2d04d"/></dir><dir name="etc"><file name="adminhtml1.xml" hash="95f8701b6b8fcbe89e38f48d99642da6"/><file name="config.xml" hash="d8d3b0c72b75fca855abc82c673738f3"/><file name="system1.xml" hash="2436e296a695d9bf7db015f5f461486b"/></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="YRS_CartitemDeletion.xml" hash="a1a56cfb229842c3aca3fc3457d0f08a"/></dir></target><target name="magedesign"><dir name="frontend"><dir name="base"><dir name="default"><dir name="layout"><file name="cartitem_deletion.xml" hash="947bd9bb62eeb803c2edaa6be6cfbc00"/></dir><dir name="template"><dir name="itemdeletion"><dir name="cart"><dir name="item"><dir name="configure"><file name="updatecart.phtml" hash="0df52a722e11758732b309a9458ff278"/></dir><file name="default.phtml" hash="7a9ca2b20035f3750d014dc7b7ee9271"/></dir></dir><file name="cart.phtml" hash="2bf0fde8a6fdaa6c548912c17828ad6e"/><file name="noItems.phtml" hash="0f65133464278d39200804ae3f073189"/></dir></dir></dir></dir></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.1.0</min><max>6.0.0</max></php><package><name>YRS_CartitemDeletion</name><channel>local</channel><min>1.8</min><max>1.9</max></package></required></dependencies>
+</package>
